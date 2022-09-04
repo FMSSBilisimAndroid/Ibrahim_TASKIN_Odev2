@@ -1,3 +1,11 @@
+
+
+
+![Fmss_Odev2](https://user-images.githubusercontent.com/101405883/188326855-ac6155f4-a729-403e-a897-23fb2a7acc48.gif)
+
+
+
+
 # Eager vs Lazy Filters
 ###
 Eager istekli bir algoritmadır hemen yürütülür ve bir sonuç döndürür. Lazy tembel bir algoritmadır, yürütülmesi gerekene kadar hesaplamayı erteler ve ardından bir sonuç üretir.Eager ve Lazy algoritmaların hem artıları hem de eksileri vardır. Eager algoritmaları anlamak ve hata ayıklamak daha kolaydır.
