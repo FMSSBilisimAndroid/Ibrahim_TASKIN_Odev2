@@ -29,15 +29,15 @@ class SingUpActivity : AppCompatActivity() {
 
     private fun singUpClicked() {
         binding.apply {
-            val email = enterEmailText.text
-            val username = createUsernameText.text
-            val password = createPasswordText.text
 
             singUpButton.setOnClickListener {
-                singUpCheck(email.toString(), username.toString(), password.toString())
-                if (email?.isNotEmpty() == true && username?.isNotEmpty() == true && password?.isNotEmpty() == true) {
-                    userRegister(email.toString(), username.toString(), password.toString())
-                    showAlertDialog(email.toString(), username.toString(), password.toString())
+                val email = enterEmailText.text.toString()
+                val username = createUsernameText.text.toString()
+                val password = createPasswordText.text.toString()
+                singUpCheck(email, username, password)
+                if (email.isNotEmpty() && username.isNotEmpty() && password.isNotEmpty()) {
+                    userRegister(email, username, password)
+                    showAlertDialog(email, username, password)
                     clear()
                     Toast.makeText(applicationContext,"Register Successful", Toast.LENGTH_SHORT).show()
                 } else {

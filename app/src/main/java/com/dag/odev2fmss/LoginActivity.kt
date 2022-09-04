@@ -39,12 +39,12 @@ class LoginActivity : AppCompatActivity() {
 
     private fun loginClicked() {
         binding.apply {
-            val username = loginUsernameText.text
-            val password = loginPasswordText.text
 
             loginButton.setOnClickListener {
-                loginCheck(username.toString(), password.toString())
-                loginInformationCheck(username.toString(), password.toString())
+                val username = loginUsernameText.text.toString()
+                val password = loginPasswordText.text.toString()
+                loginCheck(username, password)
+                loginInformationCheck(username, password)
             }
         }
     }
