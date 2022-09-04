@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SingUpActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/singUp_circle_1"
+        app:shapeAppearanceOverlay="@style/CircularView"
+        android:layout_width="460dp"
+        android:layout_height="460dp"
+        app:srcCompat="@color/circle_3"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="-125dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/singUp_circle_2"
+        app:shapeAppearanceOverlay="@style/CircularView"
+        android:layout_width="460dp"
+        android:layout_height="460dp"
+        app:srcCompat="@color/circle_3"
+        android:layout_marginStart="-183dp"
+        android:layout_marginTop="-253dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginBottom="253dp"
+        app:layout_constraintBottom_toBottomOf="@id/singUp_circle_1"
+        app:layout_constraintEnd_toEndOf="@id/singUp_circle_1"
+        app:layout_constraintStart_toStartOf="@id/singUp_circle_1"
+        app:layout_constraintTop_toTopOf="@id/singUp_circle_1" />
+
+    <Button
+        android:id="@+id/singUp_button"
+        app:shapeAppearanceOverlay="@style/MyButtonStyle"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        style="@style/MyButtonStyle"
+        android:text="@string/sing_up"
+        android:textAllCaps="false"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="392dp"
+        app:layout_constraintStart_toStartOf="@id/singUp_circle_1"
+        app:layout_constraintEnd_toEndOf="@id/singUp_circle_1"
+        app:layout_constraintBottom_toBottomOf="@id/singUp_circle_1"
+        app:layout_constraintTop_toTopOf="@id/singUp_circle_1" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/create_password_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_key"
+        app:errorEnabled="true"
+        android:layout_marginStart="-51dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="223dp"
+        app:layout_constraintBottom_toBottomOf="@id/singUp_circle_1"
+        app:layout_constraintEnd_toEndOf="@id/singUp_circle_1"
+        app:layout_constraintStart_toStartOf="@id/singUp_circle_1"
+        app:layout_constraintTop_toTopOf="@id/singUp_circle_1"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/create_password_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="textPassword"
+            android:hint="@string/create_password"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color"
+            android:textSize="26sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/create_username_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_person"
+        app:errorEnabled="true"
+        app:endIconMode="clear_text"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="321dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="108dp"
+        app:layout_constraintBottom_toBottomOf="@id/singUp_circle_2"
+        app:layout_constraintEnd_toEndOf="@id/singUp_circle_2"
+        app:layout_constraintStart_toStartOf="@id/singUp_circle_2"
+        app:layout_constraintTop_toTopOf="@id/singUp_circle_2"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/create_username_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:hint="@string/create_username"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color"
+            android:textSize="26sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/enter_email_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_mail"
+        app:errorEnabled="true"
+        app:endIconMode="clear_text"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="197dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="232dp"
+        app:layout_constraintBottom_toBottomOf="@id/singUp_circle_2"
+        app:layout_constraintEnd_toEndOf="@id/singUp_circle_2"
+        app:layout_constraintStart_toStartOf="@id/singUp_circle_2"
+        app:layout_constraintTop_toTopOf="@id/singUp_circle_2"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enter_email_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="textEmailAddress"
+            android:hint="@string/enter_email_id"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/text_color"
+            android:textSize="26sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/singUp_text"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center_vertical"
+        android:text="@string/create_account"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="361dp"
+        app:layout_constraintBottom_toBottomOf="@id/singUp_circle_2"
+        app:layout_constraintEnd_toEndOf="@id/singUp_circle_2"
+        app:layout_constraintStart_toStartOf="@id/singUp_circle_2"
+        app:layout_constraintTop_toTopOf="@id/singUp_circle_2" />
+
+    <Button
+        android:id="@+id/singUp_back_button"
+        app:shapeAppearanceOverlay="@style/MyBackButtonStyle"
+        style="@style/MyBackButtonStyle"
+        android:paddingStart="12dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="359dp"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toTopOf="@id/singUp_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

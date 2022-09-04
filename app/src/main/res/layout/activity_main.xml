@@ -6,13 +6,120 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/main_circle_1"
+        app:shapeAppearanceOverlay="@style/CircularView"
+        android:layout_width="460dp"
+        android:layout_height="460dp"
+        android:background="@color/circle_1"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="-63dp"
+        android:layout_marginTop="-106dp"
+        android:layout_marginBottom="572dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/main_circle_2"
+        app:shapeAppearanceOverlay="@style/CircularView"
+        android:layout_width="460dp"
+        android:layout_height="460dp"
+        android:background="@color/circle_1"
+        android:layout_marginStart="183dp"
+        android:layout_marginTop="253dp"
+        android:layout_marginEnd="-183dp"
+        android:layout_marginBottom="-253dp"
+        app:layout_constraintStart_toStartOf="@id/main_circle_1"
+        app:layout_constraintEnd_toEndOf="@id/main_circle_1"
+        app:layout_constraintTop_toTopOf="@id/main_circle_1"
+        app:layout_constraintBottom_toBottomOf="@id/main_circle_1"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/main_picture_1"
+        app:shapeAppearanceOverlay="@style/CircularView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:paddingBottom="60dp"
+        app:srcCompat="@drawable/picture_1"
+        android:layout_marginStart="142.92dp"
+        android:layout_marginTop="369.52dp"
+        android:layout_marginEnd="151.18dp"
+        android:layout_marginBottom="-158.38dp"
+        app:layout_constraintBottom_toBottomOf="@id/main_circle_1"
+        app:layout_constraintEnd_toEndOf="@id/main_circle_1"
+        app:layout_constraintStart_toStartOf="@id/main_circle_1"
+        app:layout_constraintTop_toTopOf="@id/main_circle_1" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/main_picture_2"
+        app:shapeAppearanceOverlay="@style/CircularView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="60dp"
+        app:srcCompat="@drawable/picture_2"
+        android:layout_marginStart="147.03dp"
+        android:layout_marginTop="269.67dp"
+        android:layout_marginEnd="129.35dp"
+        android:layout_marginBottom="87.04dp"
+        app:layout_constraintStart_toStartOf="@id/main_circle_1"
+        app:layout_constraintTop_toTopOf="@id/main_circle_1"
+        app:layout_constraintEnd_toEndOf="@id/main_circle_1"
+        app:layout_constraintBottom_toBottomOf="@id/main_circle_1"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/main_text_1"
+        android:layout_width="342dp"
+        android:layout_height="190dp"
+        android:fontFamily="@font/inter_extra_bold"
+        android:gravity="top"
+        android:lineSpacingExtra="-16dp"
+        android:text="@string/let_s_get_started"
+        android:textColor="@color/black"
+        android:textSize="75sp"
+        android:textStyle="bold"
+        android:layout_marginStart="-181dp"
+        android:layout_marginTop="226dp"
+        android:layout_marginEnd="299dp"
+        android:layout_marginBottom="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/join_button"
+        app:layout_constraintEnd_toEndOf="@id/main_circle_2"
+        app:layout_constraintStart_toStartOf="@id/main_circle_2"
+        app:layout_constraintTop_toBottomOf="@+id/main_circle_1" />
+
+    <TextView
+        android:id="@+id/main_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/grow_together"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="166dp"
+        android:layout_marginEnd="192dp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_text_1"
+        app:layout_constraintEnd_toEndOf="@+id/main_text_1"
+        app:layout_constraintStart_toStartOf="@+id/main_text_1"
+        app:layout_constraintTop_toTopOf="@+id/main_text_1" />
+
+    <Button
+        android:id="@+id/join_button"
+        app:shapeAppearanceOverlay="@style/MyButtonStyle"
+        style="@style/MyButtonStyle"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:text="@string/join_now"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginTop="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_text_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
